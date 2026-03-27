@@ -1,0 +1,1486 @@
+{
+  "sceneName": "",
+  "sceneUrl": "",
+  "sentenceList": [
+    {
+      "command": 3,
+      "commandRaw": "bgm",
+      "content": "s_Title.mp3",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        },
+        {
+          "key": "volume",
+          "value": 80
+        },
+        {
+          "key": "enter",
+          "value": 3000
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "s_Title.mp3",
+          "url": "s_Title.mp3",
+          "lineNumber": 0,
+          "type": 1
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 22,
+      "commandRaw": "unlockBgm",
+      "content": "s_Title.mp3",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        },
+        {
+          "key": "name",
+          "value": "雲を追いかけて"
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 7,
+      "commandRaw": "intro",
+      "content": "你好|欢迎来到 {egine} 的世界",
+      "args": [],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 1,
+      "commandRaw": "changeBg",
+      "content": "WebGalEnter.webp",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "WebGalEnter.webp",
+          "url": "WebGalEnter.webp",
+          "lineNumber": 0,
+          "type": 0
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 30,
+      "commandRaw": "setTransition",
+      "content": "",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        },
+        {
+          "key": "target",
+          "value": "bg-main"
+        },
+        {
+          "key": "exit",
+          "value": "shockwaveOut"
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "",
+      "content": "你好|欢迎来到 {egine} 的世界",
+      "args": [
+        {
+          "key": "speaker",
+          "value": ""
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 1,
+      "commandRaw": "changeBg",
+      "content": "bg.webp",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "bg.webp",
+          "url": "bg.webp",
+          "lineNumber": 0,
+          "type": 0
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 30,
+      "commandRaw": "setTransition",
+      "content": "",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        },
+        {
+          "key": "target",
+          "value": "bg-main"
+        },
+        {
+          "key": "enter",
+          "value": "shockwaveIn"
+        },
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 21,
+      "commandRaw": "unlockCg",
+      "content": "bg.webp",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        },
+        {
+          "key": "name",
+          "value": "良い夜"
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": "// 解锁CG并赋予名称"
+    },
+    {
+      "command": 2,
+      "commandRaw": "changeFigure",
+      "content": "stand.webp",
+      "args": [
+        {
+          "key": "left",
+          "value": true
+        },
+        {
+          "key": "enter",
+          "value": "enter-from-left"
+        },
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "stand.webp",
+          "url": "stand.webp",
+          "lineNumber": 0,
+          "type": 2
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 8,
+      "commandRaw": "miniAvatar",
+      "content": "miniavatar.webp",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "miniavatar.webp",
+          "url": "miniavatar.webp",
+          "lineNumber": 0,
+          "type": 2
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "{heroine}",
+      "content": "欢迎使用 {egine}！这是一款全新的网页端视觉小说引擎。",
+      "args": [
+        {
+          "key": "speaker",
+          "value": "{heroine}"
+        },
+        {
+          "key": "vocal",
+          "value": "v1.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v1.wav",
+          "url": "v1.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 2,
+      "commandRaw": "changeFigure",
+      "content": "stand2.webp",
+      "args": [
+        {
+          "key": "right",
+          "value": true
+        },
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "stand2.webp",
+          "url": "stand2.webp",
+          "lineNumber": 0,
+          "type": 2
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "{egine} 是使用 Web 技术开发的引擎，因此在网页端有良好的表现。 -v2.wav",
+      "content": "{egine} 是使用 Web 技术开发的引擎，因此在网页端有良好的表现。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v2.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v2.wav",
+          "url": "v2.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "由于这个特性，如果你将 {egine} 部署到服务器或网页托管平台上，玩家只需要一串链接就可以开始游玩！ -v3.wav",
+      "content": "由于这个特性，如果你将 {egine} 部署到服务器或网页托管平台上，玩家只需要一串链接就可以开始游玩！",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v3.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v3.wav",
+          "url": "v3.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 25,
+      "commandRaw": "setAnimation",
+      "content": "move-front-and-back",
+      "args": [
+        {
+          "key": "target",
+          "value": "fig-left"
+        },
+        {
+          "key": "continue",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "听起来是不是非常吸引人？ -v4.wav",
+      "content": "听起来是不是非常吸引人？",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v4.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v4.wav",
+          "url": "v4.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 2,
+      "commandRaw": "changeFigure",
+      "content": "",
+      "args": [
+        {
+          "key": "right",
+          "value": true
+        },
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 29,
+      "commandRaw": "setTransform",
+      "content": "{\"position\": {\"x\": 500,\"y\": 0}}",
+      "args": [
+        {
+          "key": "target",
+          "value": "fig-left"
+        },
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "{egine} 引擎也具有动画系统和特效系统，使用 {egine} 开发的游戏可以拥有很好的表现效果。 -v5.wav",
+      "content": "{egine} 引擎也具有动画系统和特效系统，使用 {egine} 开发的游戏可以拥有很好的表现效果。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v5.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v5.wav",
+          "url": "v5.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 6,
+      "commandRaw": "pixiInit",
+      "content": "pixiInit",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 5,
+      "commandRaw": "pixiPerform",
+      "content": "snow",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "比如，这个下起小雪的特效。 -v6.wav",
+      "content": "比如，这个下起小雪的特效。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v6.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v6.wav",
+          "url": "v6.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "除此以外，分支选择的功能也必不可少。 -v7.wav",
+      "content": "除此以外，分支选择的功能也必不可少。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v7.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v7.wav",
+          "url": "v7.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 6,
+      "commandRaw": "pixiInit",
+      "content": "pixiInit",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "WebGAL",
+      "content": "接下来介绍一些新版本功能！",
+      "args": [
+        {
+          "key": "speaker",
+          "value": "WebGAL"
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "WebGAL",
+      "content": "比如这个[注](zhù)[音](yīn)功能，可以为游戏带来更好的体验！",
+      "args": [
+        {
+          "key": "speaker",
+          "value": "WebGAL"
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "WebGAL",
+      "content": "我们也支持了[文本拓展语法](style=color:#B5495B;)，可以为[文](wen)[本](ben)带来[富文本支持](style-alltext=font-style:italic; style=color:#66327C;)、交互等特性。",
+      "args": [
+        {
+          "key": "speaker",
+          "value": "WebGAL"
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "WebGAL",
+      "content": "新版本添加了特性：获取用户输入，你要尝试一下吗？",
+      "args": [
+        {
+          "key": "speaker",
+          "value": "WebGAL"
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 10,
+      "commandRaw": "choose",
+      "content": "尝试一下:userInput|算了吧:toNextPart",
+      "args": [],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 14,
+      "commandRaw": "label",
+      "content": "userInput",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 31,
+      "commandRaw": "getUserInput",
+      "content": "name",
+      "args": [
+        {
+          "key": "title",
+          "value": "如何称呼你"
+        },
+        {
+          "key": "buttonText",
+          "value": "确认"
+        },
+        {
+          "key": "defaultValue",
+          "value": "WebGALPlayer"
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "WebGAL",
+      "content": "很高兴遇见你，{name}！",
+      "args": [
+        {
+          "key": "speaker",
+          "value": "WebGAL"
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 15,
+      "commandRaw": "jumpLabel",
+      "content": "toNextPart",
+      "args": [],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 14,
+      "commandRaw": "label",
+      "content": "toNextPart",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "你可以通过以下两个分支了解 {egine} 的更多故事。 -v8.wav",
+      "content": "你可以通过以下两个分支了解 {egine} 的更多故事。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v8.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v8.wav",
+          "url": "v8.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 10,
+      "commandRaw": "choose",
+      "content": "{egine} 发展历程:choose1|{egine} 冷知识:choose2",
+      "args": [],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "分支1",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 14,
+      "commandRaw": "label",
+      "content": "choose1",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "{egine} 的开发初衷是能够让更多人可以更方便地制作属于自己的视觉小说。 -v9.wav",
+      "content": "{egine} 的开发初衷是能够让更多人可以更方便地制作属于自己的视觉小说。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v9.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v9.wav",
+          "url": "v9.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "在一开始，{egine} 只具备很少的功能，仅仅能支持立绘和背景的显示、语音播放和分支选择。 -v10.wav",
+      "content": "在一开始，{egine} 只具备很少的功能，仅仅能支持立绘和背景的显示、语音播放和分支选择。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v10.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v10.wav",
+          "url": "v10.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 25,
+      "commandRaw": "setAnimation",
+      "content": "move-front-and-back",
+      "args": [
+        {
+          "key": "target",
+          "value": "fig-left"
+        },
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "在经历一年的发展后，现在已经是支持了很多优秀的表现效果的引擎了！ -v11.wav",
+      "content": "在经历一年的发展后，现在已经是支持了很多优秀的表现效果的引擎了！",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v11.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v11.wav",
+          "url": "v11.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "除此以外，{egine} 编辑器的加入也使得制作和导出一个游戏更加方便快捷。 -v12.wav",
+      "content": "除此以外，{egine} 编辑器的加入也使得制作和导出一个游戏更加方便快捷。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v12.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v12.wav",
+          "url": "v12.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 15,
+      "commandRaw": "jumpLabel",
+      "content": "end",
+      "args": [],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "分支2",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 14,
+      "commandRaw": "label",
+      "content": "choose2",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "这个演示游戏使用的素材是 AI 生成的。 -v13.wav",
+      "content": "这个演示游戏使用的素材是 AI 生成的。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v13.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v13.wav",
+          "url": "v13.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "{egine} 项目只用了一年不到就在 GitHub 获得了 1000 星标！ -v14.wav",
+      "content": "{egine} 项目只用了一年不到就在 GitHub 获得了 1000 星标！",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v14.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v14.wav",
+          "url": "v14.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "{egine} 的开发历程，是一个在开发中学习开发的过程。因此她经历了3次重构，并且每次几乎都是推倒重来式的。 -v15.wav",
+      "content": "{egine} 的开发历程，是一个在开发中学习开发的过程。因此她经历了3次重构，并且每次几乎都是推倒重来式的。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v15.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v15.wav",
+          "url": "v15.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "{egine} 的脚本语言是为了简化制作难度而全新设计的！ -v16.wav",
+      "content": "{egine} 的脚本语言是为了简化制作难度而全新设计的！",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v16.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v16.wav",
+          "url": "v16.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "l2d",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "label:l2d",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "changeFigure:hiyori/hiyori_pro_t11.model3.json -left -motion=Idle -next",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "{egine} 项目现在也开始尝试实验性支持 live2D！今后可能会成为一个正式功能！",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "结束分支",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 14,
+      "commandRaw": "label",
+      "content": "end",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "changeFigure:none -left -next",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "changeFigure:stand.webp -next",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "为了更接近桌面端视觉小说引擎的能力，我们支持很多快捷键以及可跳转的剧情回溯。 -v17.wav",
+      "content": "为了更接近桌面端视觉小说引擎的能力，我们支持很多快捷键以及可跳转的剧情回溯。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v17.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v17.wav",
+          "url": "v17.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "按下菜单中的“回想”按钮或者向上滚动鼠标滚轮试试吧！ -v18.wav",
+      "content": "按下菜单中的“回想”按钮或者向上滚动鼠标滚轮试试吧！",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v18.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v18.wav",
+          "url": "v18.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "快速存读挡、丰富的选项、自动播放以及快进等功能，也是应有尽有。 -v19.wav",
+      "content": "快速存读挡、丰富的选项、自动播放以及快进等功能，也是应有尽有。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v19.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v19.wav",
+          "url": "v19.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 27,
+      "commandRaw": "setTempAnimation",
+      "content": "[{\"position\": {\"x\": 500,\"y\": 0},\"duration\": 0},{\"position\": {\"x\": 400,\"y\": 0},\"duration\": 250},{\"position\": {\"x\": 600,\"y\": 0},\"duration\": 500},{\"position\": {\"x\": 500,\"y\": 0},\"duration\": 250}]",
+      "args": [
+        {
+          "key": "target",
+          "value": "fig-left"
+        },
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "当然，这不算什么，因为大多数成熟的引擎都有这些功能。但是在 Web 端，这却是很少见的。 -v20.wav",
+      "content": "当然，这不算什么，因为大多数成熟的引擎都有这些功能。但是在 Web 端，这却是很少见的。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v20.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v20.wav",
+          "url": "v20.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "我们为可能初次开发游戏的开发者提供了美观的通用 UI 和丰富的预设功能与动画。所以你可以没有顾虑地快速开始制作游戏。 -v21.wav",
+      "content": "我们为可能初次开发游戏的开发者提供了美观的通用 UI 和丰富的预设功能与动画。所以你可以没有顾虑地快速开始制作游戏。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v21.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v21.wav",
+          "url": "v21.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "{egine} 项目组期待你的作品能够在 {egine} 上呈现！只需要一个链接就可以让万千用户立刻开始享受你的作品。 -v22.wav",
+      "content": "{egine} 项目组期待你的作品能够在 {egine} 上呈现！只需要一个链接就可以让万千用户立刻开始享受你的作品。",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v22.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v22.wav",
+          "url": "v22.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 0,
+      "commandRaw": "感谢你关注 {egine} 项目！ -v23.wav",
+      "content": "感谢你关注 {egine} 项目！",
+      "args": [
+        {
+          "key": "vocal",
+          "value": "v23.wav"
+        }
+      ],
+      "sentenceAssets": [
+        {
+          "name": "v23.wav",
+          "url": "v23.wav",
+          "lineNumber": 0,
+          "type": 5
+        }
+      ],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 11,
+      "commandRaw": "end",
+      "content": "end",
+      "args": [],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    },
+    {
+      "command": 28,
+      "commandRaw": "comment",
+      "content": "",
+      "args": [
+        {
+          "key": "next",
+          "value": true
+        }
+      ],
+      "sentenceAssets": [],
+      "subScene": [],
+      "inlineComment": ""
+    }
+  ],
+  "assetsList": [
+    {
+      "name": "s_Title.mp3",
+      "url": "s_Title.mp3",
+      "lineNumber": 0,
+      "type": 1
+    },
+    {
+      "name": "WebGalEnter.webp",
+      "url": "WebGalEnter.webp",
+      "lineNumber": 0,
+      "type": 0
+    },
+    {
+      "name": "bg.webp",
+      "url": "bg.webp",
+      "lineNumber": 0,
+      "type": 0
+    },
+    {
+      "name": "stand.webp",
+      "url": "stand.webp",
+      "lineNumber": 0,
+      "type": 2
+    },
+    {
+      "name": "miniavatar.webp",
+      "url": "miniavatar.webp",
+      "lineNumber": 0,
+      "type": 2
+    },
+    {
+      "name": "v1.wav",
+      "url": "v1.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "stand2.webp",
+      "url": "stand2.webp",
+      "lineNumber": 0,
+      "type": 2
+    },
+    {
+      "name": "v2.wav",
+      "url": "v2.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v3.wav",
+      "url": "v3.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v4.wav",
+      "url": "v4.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v5.wav",
+      "url": "v5.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v6.wav",
+      "url": "v6.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v7.wav",
+      "url": "v7.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v8.wav",
+      "url": "v8.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v9.wav",
+      "url": "v9.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v10.wav",
+      "url": "v10.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v11.wav",
+      "url": "v11.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v12.wav",
+      "url": "v12.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v13.wav",
+      "url": "v13.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v14.wav",
+      "url": "v14.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v15.wav",
+      "url": "v15.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v16.wav",
+      "url": "v16.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v17.wav",
+      "url": "v17.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v18.wav",
+      "url": "v18.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v19.wav",
+      "url": "v19.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v20.wav",
+      "url": "v20.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v21.wav",
+      "url": "v21.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v22.wav",
+      "url": "v22.wav",
+      "lineNumber": 0,
+      "type": 5
+    },
+    {
+      "name": "v23.wav",
+      "url": "v23.wav",
+      "lineNumber": 0,
+      "type": 5
+    }
+  ],
+  "subSceneList": []
+}
