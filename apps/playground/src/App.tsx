@@ -14,6 +14,7 @@ interface IDiffObject {
 }
 
 function App() {
+  const editorRef = useRef<monaco.editor.IStandaloneCodeEditor>(null);
   const diffEditorRef = useRef<monaco.editor.IDiffEditor>(null);
   const [diffObject, setDiffObject] = useState<IDiffObject>({
     modified: "",
@@ -21,38 +22,56 @@ function App() {
     originalSpeed: 0,
     modifiedSpeed: 0,
   });
-  const handleEditorDidMount = (editor: monaco.editor.IDiffEditor) => {
+  const handleDiffEditorDidMount = (editor: monaco.editor.IDiffEditor) => {
     diffEditorRef.current = editor;
+    editor.layout();
+  };
+  const handleEditorDidMount = (editor: monaco.editor.IStandaloneCodeEditor) => {
+    editorRef.current = editor;
+    editor.focus();
+    onParsing(textCode);
   };
 
   const onParsing = (value?: string) => {
-    const time = {
-      p1: performance.now(),
-      p2: 0,
-    };
-    const parsed = parseScript(value ?? "");
-    time.p1 = performance.now() - time.p1;
-    time.p2 = performance.now();
-    const parsedForNew = parseScriptForNew(value ?? "");
-    time.p2 = performance.now() - time.p2;
+    const input = value ?? "";
+    const runs = 50; // 测50次
+
+    // 2. 正式测量 parseScript
+    let total1 = 0;
+    for (let i = 0; i < runs; i++) {
+      const start = performance.now();
+      parseScript(input);
+      total1 += performance.now() - start;
+    }
+
+    // 3. 正式测量 parseScriptForNew
+    let total2 = 0;
+    for (let i = 0; i < runs; i++) {
+      const start = performance.now();
+      parseScriptForNew(input);
+      total2 += performance.now() - start;
+    }
+
+    // 4. 只在最后做一次 JSON.stringify
+    const modified = JSON.stringify(parseScript(input), null, 2);
+    const original = JSON.stringify(parseScriptForNew(input), null, 2);
+
     setDiffObject({
-      modified: JSON.stringify(parsed, null, 2),
-      original: JSON.stringify(parsedForNew, null, 2),
-      modifiedSpeed: time.p1,
-      originalSpeed: time.p2,
+      modified,
+      original,
+      modifiedSpeed: total1 / runs,
+      originalSpeed: total2 / runs,
     });
   };
 
   return (
     <>
+      <button onClick={() => onParsing(editorRef.current?.getValue())}>重新解析</button>
       <Editor
         height="50vh"
         defaultLanguage="json"
         defaultValue={textCode}
-        onMount={(editor) => {
-          editor.focus();
-          onParsing(textCode);
-        }}
+        onMount={handleEditorDidMount}
         onChange={(v) => onParsing(v)}
       />
       <hr />
@@ -62,11 +81,11 @@ function App() {
         webgal-parser-new speed: {diffObject.originalSpeed.toFixed(2)}ms
       </p>
       <DiffEditor
-        height="90vh"
+        height="70vh"
         language="json"
         original={diffObject.original}
         modified={diffObject.modified}
-        onMount={handleEditorDidMount}
+        onMount={handleDiffEditorDidMount}
       />
     </>
   );
