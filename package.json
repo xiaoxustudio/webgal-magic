@@ -6,8 +6,10 @@
   "scripts": {
     "ready": "vp fmt && vp lint && vp run test -r && vp run build -r",
     "dev": "vp run playground#dev",
-    "dev:parser": "vp run magic-parser#dev",
-    "benchmark": "vp run magic-parser#benchmark",
+    "dev:parser": "vp run webgal-magic-parser#dev",
+    "build": "vp run playground#build",
+    "build:parser": "vp run webgal-magic-parser#build",
+    "benchmark": "vp run webgal-magic-parser#benchmark",
     "prepare": "vp config"
   },
   "devDependencies": {

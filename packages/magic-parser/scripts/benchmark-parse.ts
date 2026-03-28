@@ -40,14 +40,9 @@ const runBenchmark = (label: string, fn: () => void) => {
   const average = elapsed / iterations;
   console.log(`${label}: total ${elapsed.toFixed(2)}ms, avg ${average.toFixed(2)}ms`);
 };
+const ParserClass = SceneParserCtor as any;
 
 const runWebgalParser = () => {
-  const ParserClass = SceneParserCtor as new (
-    writer: (...args: unknown[]) => void,
-    urlMapper: (url: string) => string,
-    addNextArgList: unknown,
-    scriptConfig: unknown,
-  ) => { parse: (script: string, sceneName: string, sceneUrl: string) => void };
   const parser = new ParserClass(
     () => {},
     (url: string) => url,
@@ -55,6 +50,16 @@ const runWebgalParser = () => {
     SCRIPT_CONFIG,
   );
   parser.parse(scriptText, "", "");
+};
+
+const runWebgalConfigParser = () => {
+  const parser = new ParserClass(
+    () => {},
+    (url: string) => url,
+    ADD_NEXT_ARG_LIST,
+    SCRIPT_CONFIG,
+  );
+  return parser.parseConfig(configText);
 };
 
 const runLocalParser = () => {
@@ -67,5 +72,6 @@ const runLocalConfigParser = () => {
 
 console.log(`iterations=${iterations}`);
 runBenchmark("webgal-parser", runWebgalParser);
-runBenchmark("src-parser", runLocalParser);
-runBenchmark("src-configParser", runLocalConfigParser);
+runBenchmark("webgal-parser-config", runWebgalConfigParser);
+runBenchmark("webgal-parser-new", runLocalParser);
+runBenchmark("webgal-parser-config-new", runLocalConfigParser);
