@@ -5,6 +5,7 @@ import { parseScript, parseScriptForNew } from "./parser";
 import "./App.css";
 import "./init";
 import textCode from "/start.txt?raw";
+import longCode from "/long-script.txt?raw";
 
 interface IDiffObject {
   original: string;
@@ -64,9 +65,23 @@ function App() {
     });
   };
 
+  const onSelectChange = (value: string) => {
+    if (value === "common") {
+      editorRef.current?.setValue(textCode);
+    } else {
+      editorRef.current?.setValue(longCode);
+    }
+  };
+
   return (
     <>
-      <button onClick={() => onParsing(editorRef.current?.getValue())}>重新解析</button>
+      <div>
+        <select defaultValue="common" onChange={(e) => onSelectChange(e.target.value)}>
+          <option value="common">common script</option>
+          <option value="long">long script</option>
+        </select>
+        <button onClick={() => onParsing(editorRef.current?.getValue())}>重新解析</button>
+      </div>
       <Editor
         height="50vh"
         defaultLanguage="json"
