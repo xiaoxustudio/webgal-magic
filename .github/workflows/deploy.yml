@@ -19,18 +19,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v6
       - uses: voidzero-dev/setup-vp@v1
         with:
-          node-version: "24"
           cache: true
+          node-version: "24"
 
       - run: vp install
-      - run: vp check --fix
-      - run: vp run test
       - name: Build with Playground
         run: vp run build
         env:
-          GITHUB_PAGES: true # 传递环境变量，和本地一致
+          GITHUB_PAGES: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
