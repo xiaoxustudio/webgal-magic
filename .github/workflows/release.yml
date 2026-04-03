@@ -29,5 +29,6 @@ jobs:
       - name: Create versions and publish
         run: vp run release
         env:
+          NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
