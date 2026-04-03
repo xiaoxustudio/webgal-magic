@@ -27,7 +27,7 @@ jobs:
 
       - run: vp install
       - name: Build with Playground
-        run: vp run build
+        run: vp run build:parser && vp run build
         env:
           GITHUB_PAGES: true
       - name: Upload artifact
