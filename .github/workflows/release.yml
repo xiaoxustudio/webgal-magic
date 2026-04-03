@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: voidzero-dev/setup-vp@v1
+        with:
+          cache: true
+          node-version: "24"
+
+      - name: Install dependencies
+        run: vp install
+
+      - name: Build
+        run: vp run build:parser
+
+      - name: Version and Publish
+        run: pnpm changeset version && changeset publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
