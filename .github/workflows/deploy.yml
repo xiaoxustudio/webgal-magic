@@ -26,7 +26,7 @@ jobs:
 
       - run: vp install
       - run: vp check --fix
-      - run: vp test
+      - run: vp run test
       - name: Build with Playground
         run: vp run build
         env:
