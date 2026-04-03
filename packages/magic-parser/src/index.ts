@@ -116,8 +116,9 @@ export function parseScriptConfig(script: string): {
   return results;
 }
 
-export { Lexer, Parser, sceneTextPreProcess };
 export * from "./types.ts";
 export * from "./utils.ts";
+
+export { Lexer, Parser, sceneTextPreProcess };
 export { CommandType as commandType } from "./types.ts";
 export { fileType } from "./types.ts";
