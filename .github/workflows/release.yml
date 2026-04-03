@@ -2,8 +2,9 @@ name: Release
 
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -25,46 +26,8 @@ jobs:
       - name: Install dependencies
         run: vp install
 
-      - name: Build webgal-magic-parser
-        run: vp run build:parser
-
-      - name: Get tag name
-        id: get_tag
-        run: echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
-
-      - name: Generate release notes
-        id: release_notes
-        run: |
-          # 获取从上一个 tag 到当前 tag 的所有 commits
-          PREV_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo "")
-
-          if [ -z "$PREV_TAG" ]; then
-            # 如果没有上一个 tag，则获取所有 commits
-            COMMITS=$(git log --format="- %h %s (%an)" --no-merges -n 50)
-          else
-            COMMITS=$(git log ${PREV_TAG}..HEAD --format="- %h %s (%an)" --no-merges)
-          fi
-
-          # 写入到 GITHUB_OUTPUT
-          echo "CONTENTS<<EOF" >> $GITHUB_OUTPUT
-          echo "## What's Changed" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "$COMMITS" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "**Full Changelog**: https://github.com/${{ github.repository }}/compare/${PREV_TAG}...${{ steps.get_tag.outputs.TAG_NAME }}" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
-      - name: Publish to npm
-        run: vp pm publish --filter webgal-magic-parser --access public
+      - name: Create versions and publish
+        run: vp run release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ steps.get_tag.outputs.TAG_NAME }}
-          name: Release ${{ steps.get_tag.outputs.TAG_NAME }}
-          body: ${{ steps.release_notes.outputs.CONTENTS }}
-          generate_release_notes: false
-        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

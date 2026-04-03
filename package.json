@@ -11,9 +11,13 @@
     "build": "vp run playground#build",
     "build:parser": "vp run webgal-magic-parser#build",
     "benchmark": "vp run webgal-magic-parser#benchmark",
-    "prepare": "vp config"
+    "prepare": "vp config",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "vp run build:parser && pnpm changeset version && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "catalog:",
     "vite-plus": "catalog:"
   },
   "engines": {
