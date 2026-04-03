@@ -1,6 +1,6 @@
-# vite-plus-starter
+# webgal-magic-parser
 
-A starter for creating a Vite Plus project.
+A library for parsing and manipulating WebGal scripts.
 
 ## Development
 

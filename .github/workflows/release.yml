@@ -17,6 +17,17 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: voidzero-dev/setup-vp@v1
+        with:
+          cache: true
+          node-version: "24"
+
+      - name: Install dependencies
+        run: vp install
+
+      - name: Build webgal-magic-parser
+        run: vp run build:parser
+
       - name: Get tag name
         id: get_tag
         run: echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
@@ -42,6 +53,11 @@ jobs:
           echo "" >> $GITHUB_OUTPUT
           echo "**Full Changelog**: https://github.com/${{ github.repository }}/compare/${PREV_TAG}...${{ steps.get_tag.outputs.TAG_NAME }}" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Publish to npm
+        run: vp pm publish --filter webgal-magic-parser --access public
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
