@@ -5,8 +5,11 @@ export default defineConfig({
     dts: {
       tsgo: true,
     },
+    outputOptions: {
+      name: "webgal-magic",
+    },
     exports: true,
-    format: ["esm", "cjs"],
+    format: ["esm", "cjs", "umd"],
   },
   lint: {
     options: {
