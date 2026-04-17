@@ -30,8 +30,11 @@ jobs:
 
       - name: Build
         run: vp run build:parser
-
+      - run: vp dlx changelogithub
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Version and Publish
         run: pnpm changeset version && changeset publish
         env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
